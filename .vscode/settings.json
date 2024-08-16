@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "sev.h": "c",
+        "dio_cfg.h": "c",
+        "dio.h": "c",
+        "sev_cfg.h": "c"
+    }
+}
