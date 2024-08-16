@@ -82,8 +82,9 @@ void main(void){
 	u8 choice;
 	u8 attempts = 0;
 	u8 trials = 3;
-	Lcd_DisplayString("      Controlled Home");
-
+	Lcd_DisplayString("     Controlled");
+	Lcd_SetCursorPosition(1, 0);
+	Lcd_DisplayString("     Home");
 	while(1){
 		Bluetooth_vClearBuffer();
 
@@ -108,8 +109,8 @@ void main(void){
 			}
 		}
 		Lcd_ReturnHome();
-
-		Lcd_DisplayString(" Received User     ");
+		Lcd_SetCursorPosition(0, 0);
+		Lcd_DisplayString("  Received User     ");
 		Lcd_SetCursorPosition(1, 0);
 		Lcd_DisplayString((char*)userName);
 		Lcd_DisplayString("        ");
