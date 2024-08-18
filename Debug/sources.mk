@@ -22,8 +22,10 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 APP \
+APP/Initialization \
 HAL/Bluetooth_Module \
 HAL/LCD \
+HAL/SEVEN_SEGMENT \
 HAL/Servo \
 HAL/Siren \
 MCAL/DIO \
@@ -32,5 +34,4 @@ MCAL/GIE \
 MCAL/PWM \
 MCAL/TIMER \
 MCAL/UART \
-MCAL/UART_Driver \
 

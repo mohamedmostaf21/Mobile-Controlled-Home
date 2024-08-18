@@ -11,6 +11,8 @@
 
 #include "TIMER_prog.h"
 #include "../UART/UART_prog.h"
+#include "../../HAL/SEVEN_SEGMENT/SEV.h"
+#include "../../LIBS/delay.h"
 #include "../DIO/DIO.h"
 extern TMR_cfg_t TIMER2;
 u8 timer2_flag = 0;
@@ -346,6 +348,7 @@ void __vector_5(void){
 	if(timer2_inner_counter == overflow_max){
 		UART_vSendData(timer2_seconds+47);
 		UART_vSendString((u8*)" seconds remaining!\r\n");
+		Sev_Display(0, timer2_seconds-1);
 		timer2_inner_counter = 0;
 		TCNT2_REG = preload_value;
 		timer2_seconds--;
@@ -355,6 +358,8 @@ void __vector_5(void){
 		timer2_seconds = 10;
 		TMR_vStop(&TIMER2);
 		timer2_flag = FLAG_ON;
+		Delay_ms(250);
+		Sev_PowerOff(0);
 		DIO_enuWritePin(DIO_PIN_NUM_0, DIO_LOW);
 	}
 }

@@ -1,4 +1,6 @@
-APP/App.o APP/App.o: ../APP/App.c ../APP/Initialization/Initialization.h \
+APP/Initialization/Initialization.o APP/Initialization/Initialization.o:  \
+ ../APP/Initialization/Initialization.c \
+  ../APP/Initialization/Initialization.h \
   ../APP/Initialization/../../LIBS/STD_TYPES.h \
   ../APP/Initialization/../../MCAL/DIO/DIO.h \
   ../APP/Initialization/../../MCAL/DIO/../../LIBS/STD_TYPES.h \

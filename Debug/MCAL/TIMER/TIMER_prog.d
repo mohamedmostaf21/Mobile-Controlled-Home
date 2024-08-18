@@ -9,7 +9,10 @@ MCAL/TIMER/TIMER_prog.o MCAL/TIMER/TIMER_prog.o:  \
   ../MCAL/TIMER/../UART/../UART/UART_priv.h \
   ../MCAL/TIMER/../UART/../UART/../../LIBS/BIT_MATH.h \
   ../MCAL/TIMER/../UART/../UART/../../LIBS/STD_TYPES.h \
-  ../MCAL/TIMER/../DIO/DIO.h ../MCAL/TIMER/../DIO/../../LIBS/STD_TYPES.h \
+  ../MCAL/TIMER/../../HAL/SEVEN_SEGMENT/SEV.h \
+  ../MCAL/TIMER/../../LIBS/delay.h \
+  ../MCAL/TIMER/../../LIBS/delay_config.h ../MCAL/TIMER/../DIO/DIO.h \
+  ../MCAL/TIMER/../DIO/../../LIBS/STD_TYPES.h \
   ../MCAL/TIMER/../DIO/DIO_priv.h
 
 ../MCAL/TIMER/TIMER_prog.h:
@@ -35,6 +38,12 @@ MCAL/TIMER/TIMER_prog.o MCAL/TIMER/TIMER_prog.o:  \
 ../MCAL/TIMER/../UART/../UART/../../LIBS/BIT_MATH.h:
 
 ../MCAL/TIMER/../UART/../UART/../../LIBS/STD_TYPES.h:
+
+../MCAL/TIMER/../../HAL/SEVEN_SEGMENT/SEV.h:
+
+../MCAL/TIMER/../../LIBS/delay.h:
+
+../MCAL/TIMER/../../LIBS/delay_config.h:
 
 ../MCAL/TIMER/../DIO/DIO.h:
 

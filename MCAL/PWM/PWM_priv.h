@@ -10,6 +10,9 @@
 
 
 
+
+/* Section : Includes */
+
 /* Section : Macro Declarations */
 #define TCNT0_REG		*((volatile u8*) 0x52)
 #define TCNT1_REG		*((volatile u16*) 0x4C)
@@ -43,26 +46,26 @@ typedef enum{
 }TCCR2_bits;
 
 //TCCR1A BITS
-enum TCCR1A_BITS{
-	WGM10=0,
-	WGM11,
-	FOC1B,
-	FOC1A,
-	COM1B0,
-	COM1B1,
-	COM1A0,
-	COM1A1
-};
-
-enum TCCR1B_BITS{
-	CS10=0,
-	CS11,
-	CS12,
-	WGM12,
-	WGM13,
-	ICES1=6,
-	ICNC1
-};
+//enum TCCR1A_BITS{
+//	WGM10=0,
+//	WGM11,
+//	FOC1B,
+//	FOC1A,
+//	COM1B0,
+//	COM1B1,
+//	COM1A0,
+//	COM1A1
+//};
+//
+//enum TCCR1B_BITS{
+//	CS10=0,
+//	CS11,
+//	CS12,
+//	WGM12,
+//	WGM13,
+//	ICES1=6,
+//	ICNC1
+//};
 
 typedef enum{
 	CS00,
@@ -96,8 +99,6 @@ typedef enum{
 	TOV2,
 	OCF2
 }TIFR_BITS;
-
-
 
 
 
