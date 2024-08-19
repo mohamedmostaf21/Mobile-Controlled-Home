@@ -5,13 +5,7 @@
  *      Author: k.m
  */
 
-/*************************************************************************/
-/* Author        : Omar Yamany                                    		 */
-/* File          : PWM_program.c                                  	     */
-/* Date          : Mar 28, 2023	                                         */
-/* Version       : V1                                                    */
-/* GitHub        : https://github.com/Piistachyoo             		     */
-/*************************************************************************/
+
 
 #include "PWM_prog.h"
 
